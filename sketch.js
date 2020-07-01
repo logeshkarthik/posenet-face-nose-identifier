@@ -30,7 +30,7 @@ function draw() {
   if(pose){
     
   fill(255,0,0);
-  ellipse(pose.nose.x, pose.nose.y, 64);
+  ellipse(pose.nose.x, pose.nose.y, 32);
     fill(0,0,255);
     ellipse(pose.rightWrist.x,pose.rightWrist.y,32);
     ellipse(pose.leftWrist.x,pose.leftWrist.y,32);
