@@ -11,6 +11,9 @@ function setup() {
   poseNet =ml5.poseNet(video,modelLoaded);
   poseNet.on('pose',gotPoses);
 }
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
 function gotPoses(poses){
 console.log(poses);
   if(poses.length>0){
