@@ -12,6 +12,7 @@ function setup() {
   poseNet.on('pose',gotPoses);
 }
 
+
 function gotPoses(poses){
 console.log(poses);
   if(poses.length>0){
@@ -28,7 +29,7 @@ function draw() {
   if(pose){
     
   fill(255,0,0);
-  ellipse(pose.nose.x, pose.nose.y, 25);
+  ellipse(pose.nose.x, pose.nose.y, 64);
     fill(0,0,255);
     ellipse(pose.rightWrist.x,pose.rightWrist.y,32);
     ellipse(pose.leftWrist.x,pose.leftWrist.y,32);
